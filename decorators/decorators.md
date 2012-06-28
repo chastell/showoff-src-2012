@@ -161,9 +161,11 @@
     # Scotland
 
 !SLIDE bullets incremental transition=scrollLeft
-
 # decorators
 * let your data objects be data objects
 * logic in bussiness? behaviour? objects
 * bonus: ease of testing + reuse
 
+!SLIDE center transition=scrollRight
+![swan](swan.jpg)
+[Funny: Best photos of the week 17, 2012](http://www.aaanything.net/41048/pictorial/funny/best-photos-of-the-week-17-2012/)
