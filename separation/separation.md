@@ -32,7 +32,7 @@
 # it’s object-oriented
 * <div class='quote'>Attempts to predict _which_ parts of a codebase will need to change, and to structure it accordingly, have ended badly more often than not. Part of the nature of change is that you often don’t know beforehand _what_ is going to need change. […] Much like premature optimization, premature change management usually misses the mark.<br />— Avdi Grimm, _[Objects on Rails](http://objectsonrails.com)_</div>
 
-!SLIDE center incremental transition=scrollRight
+!SLIDE center transition=scrollRight
 ![change](change.jpg)
 [(Very Gradual) Change We Can Believe In](http://ncse.com/rncse/29/6/very-gradual-change-we-can-believe)
 
