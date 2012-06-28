@@ -4,7 +4,7 @@
 * various ways to persist objects (PStore!)
 * learn about your persistence layer’s features
 * disassociate models from persistence
-* play with decorators, composition, DCI
+* play with decorators, composition, AOP, DCI
 * read _[Personal names around the world](http://www.w3.org/International/questions/qa-personal-names)_
 
 !SLIDE center transition=scrollLeft
