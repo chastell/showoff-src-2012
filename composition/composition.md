@@ -235,3 +235,7 @@
 * …so you can dependency-inject it
 * [Making Little Classes out of Big Ones](http://devblog.avdi.org/2012/05/25/making-little-classes-out-of-big-ones-video/)
 * [Composing Ruby](http://www.rubyflow.com/items/7712-going-to-write-a-book-called-composing-ruby)
+
+!SLIDE center transition=scrollRight
+![pandas](pandas.jpg)
+[Священные панды](http://aliktron.livejournal.com/756496.html)
