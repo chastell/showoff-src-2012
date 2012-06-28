@@ -1,6 +1,5 @@
 !SLIDE bullets incremental transition=scrollLeft
-# \o/   yay, databases!   \o/
-* why?
+# why persist?
 * what do we want?
 * TIME TRAVEL!
 * when do we want it?
@@ -17,12 +16,12 @@
 
 !SLIDE bullets incremental transition=scrollLeft
 # \o/   yay, databases!   \o/
-* MySQL, PostgreSQL, SQLite | [embedded](https://github.com/copiousfreetime/amalgalite)?
-* CouchDB, MongoDB | [embedded](https://github.com/gdb/embedded-mongo)?
-* in memory: Redis | [ROC](https://github.com/benlund/roc)!
-* graph databases? Neo4j!
-* directory services? LDAP!
-* how about [YAML Record](https://github.com/Nico-Taing/yaml_record) or PStore?
+* relational? MySQL, PostgreSQL, SQLite
+* document? CouchDB, MongoDB
+* in memory? Redis
+* graph databases? Neo4j
+* directory services? LDAP
+* file-based? [YAML Record](https://github.com/Nico-Taing/yaml_record), PStore (!)
 
 !SLIDE bullets incremental
 # \o/   yay, databases!   \o/
