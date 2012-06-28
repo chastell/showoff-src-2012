@@ -9,6 +9,7 @@
     { "section": "decorators"     },
     { "section": "composition"    },
     { "section": "aop"            },
+    { "section": "bench"          },
     { "section": "dci"            },
     { "section": "decoupling"     },
     { "section": "summary"        }
