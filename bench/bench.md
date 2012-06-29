@@ -4,10 +4,42 @@
 
 
     class Integer
-      def sqrt_prime?
+      def simple_prime?
         (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
       end
+
+
+
+
+
+
     end
+
+
+
+
+
+
+
+     
+
+!SLIDE
+    @@@ Ruby
+
+
+
+    class Integer
+      def simple_prime?
+        (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+      end
+
+      def clever_prime?
+        return true  if self == 2
+        return false if self.even?
+        3.step(Math.sqrt(self).floor, 2).all? { |i| (self % i).nonzero? }
+      end
+    end
+
 
 
 
@@ -22,10 +54,17 @@
     require 'prime'
 
     class Integer
-      def sqrt_prime?
+      def simple_prime?
         (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
       end
+
+      def clever_prime?
+        return true  if self == 2
+        return false if self.even?
+        3.step(Math.sqrt(self).floor, 2).all? { |i| (self % i).nonzero? }
+      end
     end
+
 
 
 
@@ -40,28 +79,37 @@
     require 'prime'
 
     class Integer
-      def sqrt_prime?
+      def simple_prime?
         (2..Math.sqrt(self).floor).all? { |i| (self % i).nonzero? }
+      end
+
+      def clever_prime?
+        return true  if self == 2
+        return false if self.even?
+        3.step(Math.sqrt(self).floor, 2).all? { |i| (self % i).nonzero? }
       end
     end
 
     range = 2..1_000_000
 
     Benchmark.bmbm do |bench|
-      bench.report('sqrt:')   { range.each &:sqrt_prime? }
-      bench.report('stdlib:') { range.each &:prime?      }
+      bench.report('simple:') { range.each &:simple_prime? }
+      bench.report('clever:') { range.each &:clever_prime? }
+      bench.report('stdlib:') { range.each &:prime?        }
     end
 
 !SLIDE commandline incremental transition=scrollLeft
     $ ruby prime_bench.rb
     Rehearsal -------------------------------------------
-    sqrt:    24.740000   0.000000  24.740000 ( 24.833979)
-    stdlib:  35.340000   0.000000  35.340000 ( 35.377147)
-    --------------------------------- total: 60.080000sec
+    simple:  24.690000   0.000000  24.690000 ( 24.709989)
+    clever:  13.120000   0.000000  13.120000 ( 13.130319)
+    stdlib:  33.480000   0.000000  33.480000 ( 33.500611)
+    --------------------------------- total: 71.290000sec
 
                   user     system      total        real
-    sqrt:    24.590000   0.000000  24.590000 ( 24.606882)
-    stdlib:  36.790000   0.000000  36.790000 ( 36.827468)
+    simple:  24.780000   0.000000  24.780000 ( 24.804631)
+    clever:  13.180000   0.000000  13.180000 ( 13.194177)
+    stdlib:  33.120000   0.000000  33.120000 ( 33.158172)
 
 !SLIDE center transition=scrollRight
 ![measuring](measuring.png)
