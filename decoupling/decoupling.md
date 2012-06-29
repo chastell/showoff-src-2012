@@ -100,5 +100,5 @@
      
 
 !SLIDE center transition=scrollRight
-![giraffe](giraffe.jpg)
-[giraffes of iwo jima](http://www.johnnycheeseburger.com/post/1528439687)
+![cops](cops.jpg)
+[*THE* Random Picture Thread](http://tdpri.com/forum/2602851-post1573.html)
