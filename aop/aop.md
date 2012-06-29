@@ -200,7 +200,7 @@
 !SLIDE transition=scrollLeft
     @@@ Ruby
     Logging.new $stdout
-    PrimeSelector.new(2..7).primes
+    PrimeSelector.new(2..10).primes
 
 
 
@@ -224,7 +224,7 @@
 !SLIDE
     @@@ Ruby
     Logging.new $stdout
-    PrimeSelector.new(2..7).primes
+    PrimeSelector.new(2..10).primes
 
     # D, [2012-06-29T00:25:21.746960 #31892] DEBUG -- : prime? 2
     # D, [2012-06-29T00:25:21.747180 #31892] DEBUG -- : prime? → true
