@@ -165,7 +165,7 @@
       def add_logging
         PrimeSelector.class_eval { include RCapture::Interceptable }
         PrimeSelector.capture_pre methods: :prime? do |point|
-          @log.debug "prime? called with #{point.args.first}"
+          @log.debug "prime? #{point.args.first}"
         end
 
 
@@ -189,10 +189,10 @@
       def add_logging
         PrimeSelector.class_eval { include RCapture::Interceptable }
         PrimeSelector.capture_pre methods: :prime? do |point|
-          @log.debug "prime? called with #{point.args.first}"
+          @log.debug "prime? #{point.args.first}"
         end
         PrimeSelector.capture_post methods: :prime? do |point|
-          @log.debug "prime? returned #{point.return}"
+          @log.debug "prime? → #{point.return}"
         end
       end
     end
