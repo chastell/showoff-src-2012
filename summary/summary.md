@@ -15,6 +15,7 @@
 # questions?
 * [chastell@chastell.net](mailto:chastell@chastell.net)
 * [@chastell | chastell.net](http://chastell.net)
+* [talks.chastell.net](http://talks.chastell.net)
 
 !SLIDE bullets incremental
 # further reading
